@@ -104,3 +104,31 @@ switch(Numb){
         break;
 }
 
+//Unit Conversion
+let unit = Math.floor((Math.random() * 4) + 1);
+switch(unit){
+    case 1:
+        console.log("Conversion From Feet to Inch")
+        let num1 = Math.floor((Math.random() * 100) + 1);
+        let ToInch = num1 * 12; // 1 feet = 12 inch
+        console.log("Conversion of " + num1 + " Feet is :" + ToInch + " inch");
+        break;
+    case 2:
+        console.log("Conversion From Feet to Meter")
+        let num2 = Math.floor((Math.random() * 100) + 1);
+        let ToMeter = num2 * 0.3048; // 1 feet = 0.3048 meter
+        console.log("Conversion of " + num2 + " Feet is :" + ToMeter + " Meter");
+        break;
+    case 3:
+        console.log("Conversion From Inch to Feet")
+        let num3 = Math.floor((Math.random() * 100) + 1);
+        let ToFeet = num3 * 0.0833333; // 1 inch = 0.0833333 feet
+        console.log("Conversion of " + num3 + " Inch is :" + ToFeet + " Feet");
+        break;
+    case 4:
+        console.log("Conversion From Meter to Feet")
+        let num4 = Math.floor((Math.random() * 100) + 1);
+        let Tofeet = num4 * 3.28084; // 1 meter = 3.28084 feet
+        console.log("Conversion of " + num4 + " Meter is :" + Tofeet + " Feet");
+        break;
+}
